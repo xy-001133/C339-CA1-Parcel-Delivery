@@ -2,6 +2,9 @@ name: Parcel Delivery Tests
 
 on:
   push:
+    paths:
+      - '**/*.py'
+      - '.github/workflows/pytest.yml'
 
 jobs:
   run-tests:
