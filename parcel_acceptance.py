@@ -6,4 +6,4 @@ def is_parcel_accepted(weight_grams, length_cm):
     if weight_grams < 0 or length_cm < 0:
         raise ValueError("argument outside permitted range")
         
-    return 1 <= weight_grams <= 20000 and 1 <= length_cm < 200
+    return 1 <= weight_grams <= 20000 and 1 <= length_cm <= 200

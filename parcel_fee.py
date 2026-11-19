@@ -6,7 +6,7 @@ def delivery_fee(weight_grams):
     if not 1 <= weight_grams <= 20000:
         raise ValueError("argument outside permitted range")
 
-    if weight_grams < 1000:
+    if weight_grams <= 1000:
         return 500
         
     return 1000
